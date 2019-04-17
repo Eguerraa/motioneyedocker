@@ -12,7 +12,8 @@ Have docker compose installed
 
 2 - Copy the docker-compose.yml file to the folder or create a file with the same name.
 
-2 - Go to the created folder and run:
+3 - Go to the created folder and run:
 ````
  # docker-compose up -d
 ````
+
