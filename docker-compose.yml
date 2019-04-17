@@ -1,0 +1,16 @@
+version: '2'
+services:
+    motioneye:
+       image: ccrisan/motioneye:master-armhf
+       restart: always
+       hostname: MotionEyes
+       ports:
+         - "8081:8081"
+         - "8765:8765"
+       environment:
+         - "TZ=Europe/Lisbon"
+       volumes:
+         - /etc/motioneye:/etc/motioneye
+       devices:
+         - /dev/video0
+
